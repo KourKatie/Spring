@@ -27,7 +27,14 @@ public class HomeController {
             @RequestParam("email") String email,
             @RequestParam("company") String company,
             @RequestParam("phone") String phone,
-            @RequestParam("birthday") String birthday
+            @RequestParam("birthday") String birthday,
+            @RequestParam("latte") String latte,
+            @RequestParam("frappe") String frappe,
+            @RequestParam("irishcoffee") String irishcoffee,
+            @RequestParam("americano") String americano,
+            @RequestParam("icedcoffee") String icedcoffee,
+            @RequestParam("espresso") String espresso,
+            @RequestParam("regularcoffee") String regularcoffee
     ) {
         ModelAndView mv = new ModelAndView("formresponse");
         mv.addObject("firstname", firstname);
@@ -36,6 +43,13 @@ public class HomeController {
         mv.addObject("company", company);
         mv.addObject("phone", phone);
         mv.addObject("birthday", birthday);
+        mv.addObject("latte", latte);
+        mv.addObject("frappe", frappe);
+        mv.addObject("irishcoffee", irishcoffee);
+        mv.addObject("americano", americano);
+        mv.addObject("icedcoffee",icedcoffee);
+        mv.addObject("espresso",espresso);
+        mv.addObject("regularcoffee",regularcoffee);
         return mv;
     }
 }
