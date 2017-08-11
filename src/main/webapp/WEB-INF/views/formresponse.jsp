@@ -11,8 +11,13 @@
     <title>Thank you!</title>
 </head>
 <body>
-Thank you for submitting your info!
-${name} <br>
-${email} <br>
+Thank you for submitting your info! <br>
+<p></p>
+First Name: ${firstname} <br>
+Last Name: ${lastname} <br>
+Email: ${email} <br>
+Company: ${company} <br>
+Phone: ${phone} <br>
+Birthday ${birthday} <br>
 </body>
 </html>

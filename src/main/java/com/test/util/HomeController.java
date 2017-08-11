@@ -11,23 +11,31 @@ public class HomeController {
     @RequestMapping("/")
 
     public ModelAndView helloWorld() {
-        return new ModelAndView("welcome","message","Hello World");
+        return new ModelAndView("welcome","message","Welcome to JAVA CoffeeHouse");
     }
 
     @RequestMapping("/userform")
 
     public ModelAndView userform() {
-        return new ModelAndView("form","inst","Please enter info: ");
+        return new ModelAndView("form","inst","Register");
     }
 
     @RequestMapping("/formhandler")
     public ModelAndView formhandler(
-            @RequestParam("name") String name,
-            @RequestParam("email") String email
+            @RequestParam("firstname") String firstname,
+            @RequestParam("lastname") String lastname,
+            @RequestParam("email") String email,
+            @RequestParam("company") String company,
+            @RequestParam("phone") String phone,
+            @RequestParam("birthday") String birthday
     ) {
         ModelAndView mv = new ModelAndView("formresponse");
-        mv.addObject("name", name);
+        mv.addObject("firstname", firstname);
+        mv.addObject("lastname", lastname);
         mv.addObject("email", email);
+        mv.addObject("company", company);
+        mv.addObject("phone", phone);
+        mv.addObject("birthday", birthday);
         return mv;
     }
 }

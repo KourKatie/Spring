@@ -3,8 +3,8 @@
 <head>
     <title>Welcome!</title>
 </head>
-<a href="userform">Go to the user form</a>
 <body>
 ${message}
+<a href="userform">Register</a>
 </body>
 </html>

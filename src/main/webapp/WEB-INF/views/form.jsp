@@ -11,13 +11,14 @@
     <title>form</title>
 </head>
 <body>
-${inst}
 <form action="formhandler" method="post">
-    Name: <input type="text" name="name"><br>
-    Email: <input type="text" name="email"> <br>
+    First Name: <input type="text" name="firstname"><br>
+    Last Name: <input type="text" name="lastname"><br>
+    Email: <input type="email" name="email"> <br>
+    Company: <input type="text" name="company"> <br>
+    Phone: <input type="number" name="phone"> <br>
+    Date of Birth: <input type="date" name="birthday"> <br>
     <input type="submit" name="submit" value="Submit">
-
-
 
 </form>
 </body>
