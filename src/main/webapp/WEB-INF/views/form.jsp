@@ -11,12 +11,32 @@
 <head>
     <title>form</title>
     <link href="<c:url value="/resources/css/coffeestyle.css"/> "rel="stylesheet" >
+
+    <script language="JavaScript">
+        function verifyEmail() {
+            var verEmail = document.forms.register.email.value;
+            var verPhone = document.forms.register.phone.value;
+            if (verEmail !== null) {
+                alert("Valid Email");
+            } else {
+
+            }
+            if(verPhone.length !== 10) {
+                alert("Invalid Phone Number");
+            }
+            else {
+
+            }
+
+        }
+
+    </script>
 </head>
 <body>
-<form action="formhandler" method="post">
-    First Name: <input type="text" name="firstname"><br><br>
-    Last Name: <input type="text" name="lastname"><br><br>
-    Email: <input type="email" name="email"> <br><br>
+<form name="register" action="formhandler" method="post">
+    First Name: <input type="text" name="firstname" required><br><br>
+    Last Name: <input type="text" name="lastname" required><br><br>
+    Email: <input type="email" name="email" required> <br><br>
     Company: <input type="text" name="company"> <br><br>
     Phone: <input type="number" name="phone"> <br><br>
     Date of Birth: <input type="date" name="birthday"> <br><br>
@@ -27,9 +47,9 @@
     <input type="checkbox" name="icedcoffee" value="Iced Coffee">Iced Coffee<br>
     <input type="checkbox" name="espresso" value="Espresso">Espresso<br>
     <input type="checkbox" name="regularcoffee" value="Regular Coffee">Regular Coffee<br><br>
-    Password: <input type="text" name="password"><br>
-    Confirm Password: <input type="text" name="conpassword"><br>
-    <input type="submit" name="submit" value="Submit">
+    Password: <input type="text" name="password" required><br>
+    Confirm Password: <input type="text" name="conpassword" required><br>
+    <input type="submit" name="submit" value="Submit" onclick="verifyEmail()">
 </form>
 </body>
 </html>

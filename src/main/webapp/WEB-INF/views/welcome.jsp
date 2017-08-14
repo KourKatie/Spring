@@ -6,7 +6,16 @@
     <link href="<c:url value="/resources/css/coffeestyle.css"/> "rel="stylesheet" >
 </head>
 <body>
-${message}
+Welcome to Java CoffeeHouse!
 <a href="userform">Register</a>
+    <c:forEach items = "${cList}" var="item">
+        <p></p>
+                  Name:  ${item.name}<br>
+                  Description:  ${item.description}<br>
+                  Quantity:  ${item.quantity}<br>
+                  Price:  ${item.price}<br>
+        <p></p>
+
+    </c:forEach>
 </body>
 </html>
