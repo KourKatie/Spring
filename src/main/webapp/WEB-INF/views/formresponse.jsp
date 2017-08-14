@@ -13,7 +13,7 @@
     <link href="<c:url value="/resources/css/coffeestyle.css"/> "rel="stylesheet" >
 </head>
 <body>
-Thank you for submitting your info! <br>
+<h3>Thank you for submitting your info!</h3> <br>
 First Name: ${firstname} <br>
 Last Name: ${lastname} <br>
 Email: ${email} <br>
@@ -28,6 +28,7 @@ ${americano} <br>
 ${icedcoffee} <br>
 ${espresso}<br>
 ${regularcoffee} <br>
+Password: ${password} <br>
 
 </body>
 </html>

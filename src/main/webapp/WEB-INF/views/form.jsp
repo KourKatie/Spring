@@ -26,7 +26,9 @@
     <input type="checkbox" name="americano" value="Americano">Americano<br>
     <input type="checkbox" name="icedcoffee" value="Iced Coffee">Iced Coffee<br>
     <input type="checkbox" name="espresso" value="Espresso">Espresso<br>
-    <input type="checkbox" name="regularcoffee" value="Regular Coffee">Regular Coffee<br>
+    <input type="checkbox" name="regularcoffee" value="Regular Coffee">Regular Coffee<br><br>
+    Password: <input type="text" name="password"><br>
+    Confirm Password: <input type="text" name="conpassword"><br>
     <input type="submit" name="submit" value="Submit">
 </form>
 </body>

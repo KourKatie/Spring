@@ -34,7 +34,9 @@ public class HomeController {
             @RequestParam("americano") String americano,
             @RequestParam("icedcoffee") String icedcoffee,
             @RequestParam("espresso") String espresso,
-            @RequestParam("regularcoffee") String regularcoffee
+            @RequestParam("regularcoffee") String regularcoffee,
+            @RequestParam("password") String password,
+            @RequestParam("conpassword") String conpassword
     ) {
         ModelAndView mv = new ModelAndView("formresponse");
         mv.addObject("firstname", firstname);
@@ -50,6 +52,8 @@ public class HomeController {
         mv.addObject("icedcoffee",icedcoffee);
         mv.addObject("espresso",espresso);
         mv.addObject("regularcoffee",regularcoffee);
+        mv.addObject("password", password);
+        mv.addObject("conpassword", conpassword);
         return mv;
     }
 }
