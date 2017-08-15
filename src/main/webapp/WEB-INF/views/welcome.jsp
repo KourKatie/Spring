@@ -4,12 +4,17 @@
 <head>
     <link href="/resources/css/coffeestyle.css" rel="stylesheet" >
     <title>Welcome!</title>
+<style>
+    .col {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2em;
+    }
+</style>
 </head>
-
-<body class="floatR">
-Welcome to Java CoffeeHouse!
-<a href="userform">Register</a>
+<body class="col">
 <img class="pic" src="/resources/images/girlcoffee.jpg" alt="Girl Drinking Coffee">
+<h2>Welcome to Java CoffeeHouse!</h2>
+<a href="userform">Register</a>
     <c:forEach items = "${cList}" var="item">
         <p></p>
                   Name: ${item.name}<br>

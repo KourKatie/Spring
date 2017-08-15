@@ -2,15 +2,17 @@ body {
     background-color: burlywood;
     font-size: 16px;
     color: black;
-    text-align: left;
-}
-
-.floatR {
-    margin-left: 45%;
 
 }
+
+/*.floatR {*/
+    /*margin-top: -5em;*/
+    /*margin-left: 25em;*/
+
+/*}*/
 .pic {
-    border-radius: 25%;
-    height: 75%;
-    width: 75%;
+    /*margin-top: 20em;*/
+    /*margin-left: 5em;*/
+    height: 95%;
+    width: 105%;
 }
