@@ -1,4 +1,16 @@
-
 body {
     background-color: burlywood;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
+
+.floatR {
+    margin-left: 45%;
+
+}
+.pic {
+    border-radius: 25%;
+    height: 75%;
+    width: 75%;
 }

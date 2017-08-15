@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Thank you!</title>
-    <link href="<c:url value="/resources/css/coffeestyle.css"/> "rel="stylesheet" >
+    <link href="/resources/css/coffeestyle.css"  rel="stylesheet">
 </head>
 <body>
 <h3>Thank you for submitting your info!</h3> <br>

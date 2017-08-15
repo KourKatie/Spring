@@ -75,7 +75,6 @@ public class HomeController {
             @RequestParam("password") String password,
             @RequestParam("conpassword") String conpassword
 
-            //do server-side validation here
     ) {
         ModelAndView mv = new ModelAndView("formresponse");
         mv.addObject("firstname", firstname);
@@ -93,6 +92,7 @@ public class HomeController {
         mv.addObject("regularcoffee", regularcoffee);
         mv.addObject("password", password);
         mv.addObject("conpassword", conpassword);
+
         return mv;
     }
 
