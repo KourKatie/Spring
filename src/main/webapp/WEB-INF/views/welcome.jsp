@@ -4,6 +4,9 @@
 <head>
     <link href="/resources/css/coffeestyle.css" rel="stylesheet" >
     <title>Welcome!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Satisfy');
+    </style>
 <style>
     .col {
         -webkit-column-count: 2;
@@ -11,10 +14,12 @@
     }
 </style>
 </head>
-<body class="col">
+<body>
+<h1>Welcome to Java CoffeeHouse!</h1>
+<div class="align"><a href="userform">Register</a></div>
+<p></p>
+<div class="col">
 <img class="pic" src="/resources/images/girlcoffee.jpg" alt="Girl Drinking Coffee">
-<h2>Welcome to Java CoffeeHouse!</h2>
-<a href="userform">Register</a>
     <c:forEach items = "${cList}" var="item">
         <p></p>
                   Name: ${item.name}<br>
@@ -24,5 +29,6 @@
         <p></p>
 
     </c:forEach>
+</div>
 </body>
 </html>
