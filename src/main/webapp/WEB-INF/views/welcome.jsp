@@ -11,24 +11,26 @@
     .col {
         -webkit-column-count: 2;
         -webkit-column-gap: 2em;
+        font-size: 15px;
     }
 </style>
 </head>
 <body>
 <h1>Welcome to Java CoffeeHouse!</h1>
-<div class="align"><a href="userform">Register</a></div>
+<div class="est">Established 2017</div><br>
 <p></p>
 <div class="col">
-<img class="pic" src="/resources/images/girlcoffee.jpg" alt="Girl Drinking Coffee">
+<img class="pic" src="/resources/images/coffeeshop.jpg" alt="Girl Drinking Coffee">
     <c:forEach items = "${cList}" var="item">
         <p></p>
-                  Name: ${item.name}<br>
-                  Description: ${item.description}<br>
-                  Quantity: ${item.quantity} servings<br>
-                  Price: $${item.price}<br>
+        <div class="name">${item.name}</div>
+                  ${item.description}<br>
+                  ${item.quantity} servings<br>
+                  $${item.price}<br>
         <p></p>
 
     </c:forEach>
 </div>
+<div class="align"><a href="userform">Register</a></div>
 </body>
 </html>
