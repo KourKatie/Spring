@@ -14,8 +14,8 @@ body {
 .pic {
     /*margin-top: 20em;*/
     /*margin-left: 5em;*/
-    height: 85%;
-    width: 125%;
+    height: 55%;
+    width: 95%;
 }
 h1 {
     text-align: center;
@@ -35,4 +35,7 @@ h1 {
 .name {
     font-family: 'Satisfy', cursive;
     font-size: 23px;
+}
+table {
+    border-spacing: 0px;
 }
