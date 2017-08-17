@@ -13,7 +13,7 @@
     <link href="/resources/css/coffeestyle.css/" rel="stylesheet">
 
     <script language="JavaScript">
-        function verifyEmail() {
+        function verify() {
             var verEmail = document.forms.register.email.value;
             var verPhone = document.forms.register.phone.value;
             if(verPhone.length !== 10) {
@@ -28,24 +28,16 @@
     </script>
 </head>
 <body>
-<form name="register" action="formhandler" method="post">
+<form name="register" action="addUser" method="post">
     *First Name:  <input type="text" name="firstname" required><br><br>
     *Last Name: ; <input type="text" name="lastname" required><br><br>
     *Email:  <input type="email" name="email" required> <br><br>
     Company:  <input type="text" name="company"> <br><br>
     Phone:  <input type="number" name="phone"> <br><br>
     Date of Birth:  <input type="date" name="birthday"> <br><br>
-    Coffee Preferences:<br>
-                   <input type="checkbox" name="latte" value="Latte">Latte<br>
-                   <input type="checkbox" name="frappe" value="Frappe">Frappe<br>
-                   <input type="checkbox" name="irishcoffee" value="Irish Coffee">Irish Coffee<br>
-                   <input type="checkbox" name="americano" value="Americano">Americano<br>
-                   <input type="checkbox" name="icedcoffee" value="Iced Coffee">Iced Coffee<br>
-                   <input type="checkbox" name="espresso" value="Espresso">Espresso<br>
-                   <input type="checkbox" name="regularcoffee" value="Regular Coffee">Regular Coffee<br><br>
     *Password:  <input type="password" name="password" required><br>
     *Confirm Password: <input type="password" name="conpassword" required><br>
-    <input type="submit" name="submit" value="Submit" onclick="verifyEmail()">
+    <input type="submit" name="submit" value="Submit" onclick="verify()">
 </form>
 </body>
 </html>

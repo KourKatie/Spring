@@ -20,14 +20,6 @@ Email: ${email} <br>
 Company: ${company} <br>
 Phone: ${phone} <br>
 Birthday: ${birthday} <br>
-Coffee Preferences: <br>
-${latte} <br>
-${frappe} <br>
-${irishcoffee} <br>
-${americano} <br>
-${icedcoffee} <br>
-${espresso}<br>
-${regularcoffee} <br>
 Password: ${password} <br>
 
 </body>
