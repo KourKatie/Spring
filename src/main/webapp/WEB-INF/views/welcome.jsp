@@ -18,9 +18,10 @@
 <body>
 <h1>Welcome to Java CoffeeHouse!</h1>
 <div class="est">Established 2017</div><br>
-<p></p>
+<hr width="100%" size="9px" color="black">
 <div class="col">
 <img class="pic" src="/resources/images/coffeeshop.jpg" alt="Girl Drinking Coffee">
+    <p></p>
     <c:forEach items = "${cList}" var="item">
         <p></p>
         <div class="name">${item.name}</div>
@@ -31,6 +32,7 @@
 
     </c:forEach>
 </div>
+    <hr width="100%" size="9px" color="black">
 <div class="align"><a href="userform">Register</a></div>
 </body>
 </html>
